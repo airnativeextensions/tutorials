@@ -1,7 +1,7 @@
 
 # Getting Started 
 
-## Flash Builder 4.6/4.7
+## Flash Builder 4.5 
 
 An AIR Native Extension (ANE) is a single file with the extension `ane`. This file contains all of the native and actionscript libraries that are implemented by this extension. You don’t need access to a separate SWC file or to the source code to be able to use the ANE.
 
@@ -19,7 +19,7 @@ com.distriqt.Camera.ane    >     com.distriqt.Camera.swc
 ```
 
 >
-> Note: The part about changing the ANE file’s file extension from .ane to .swc is not strictly necessary. When you browse to find the file, in the “Choose a SWC file” dialog box, you can change the setting of the Files Of Type drop-down field. It is set by default to *.swc. Change it to *.*. This will have the same effect.
+> Note: Changing the ANE file extension from `.ane` to `.swc` is not strictly necessary. When you browse to find the file, in the “Choose a SWC file” dialog box, you can change the setting of the Files Of Type drop-down field. It is set by default to *.swc. Change it to *.*. This will have the same effect.
 >
 
 
