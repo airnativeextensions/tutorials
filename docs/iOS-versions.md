@@ -41,6 +41,10 @@ We also have a direct download of the SDK with the above modifications available
 
 Download the AIR 27 beta SDK
 
+>
+> Update: This appears to have been resolved in the latest AIR SDK beta for macOS
+>
+
 You will need to update the linker to use the latest linker from Xcode: 
 
 ```
