@@ -4,13 +4,52 @@
 From iOS 11 Apple now requires a new process of adding icons to your application, you can no longer simply package them as you have done with previous versions of iOS and AIR. Instead you need to create an "Assets.car" file and package in the root directory of your application.
 
 >
-> Note: You will need a macOS machine with Xcode 9+ to be able to generate this file and you need to be using AIR SDK v28+
+> Note: The Assets.car file is need for iOS 11+ when you are using AIR SDK v28+
 >
 
 
+## Method 1: Online tool
 
-## Method 1: Using Xcode
+This is the simplest way if you are a Windows developer. 
 
+Simply go to the following url:
+
+[http://applicationloader.net/appuploader/icontool.php](http://applicationloader.net/appuploader/icontool.php)
+
+and upload a 1024x1024 image of your icon. You will get a zip download containing the `Assets.car` file and all the icon sizes needed to embed in your iOS application. 
+
+
+
+
+## Method 2: Command Line
+
+>
+> Note: You will need a macOS machine with Xcode 9+ for this method to generate the Assets.car file
+>
+
+This is the method we prefer as it's simpler to update and create than having to drag files into Xcode. 
+
+It uses the same directory structure (`Assets.xcassets`) as in your Xcode application however uses the command line to convert this into the `Assets.car`, so you can simply replace the files in the directory and run the script to create your `Assets.car`. 
+
+- Download the following zip and extract it to a working directory somewhere on your machine.
+  - [assets-car-build.zip](resources/ios/assets-car-build.zip)
+  - You should find a script and a directory called `Assets.xcassets` which contains another directory called `AppIcon.appiconset`.
+
+- Replace all the images in the `AppIcon.appiconset` directory with your own icons. You must replace them with the correctly sized images. You can do this manually or we suggest you use an online tool: [appicon.build](https://www.appicon.build/). This tool will generate all the icons at the correct sizes from a single 1024x1024 image.
+
+- Run the `createAssetsCar` script. This will create a `build` directory and run the following command to build the `Assets.car` file:
+
+```
+xcrun actool Assets.xcassets --compile build --platform iphoneos --minimum-deployment-target 8.0 --app-icon AppIcon --output-partial-info-plist build/partial.plist
+```
+
+
+
+## Method 3: Using Xcode
+
+>
+> Note: You will need a macOS machine with Xcode 9+ for this method to generate the Assets.car file
+>
 
 Firstly you will need to open Xcode and create a new application
 
@@ -45,23 +84,6 @@ Firstly you will need to open Xcode and create a new application
 
 
 
-## Method 2: Command Line
-
-This is the method we prefer as it's simpler to update and create than having to drag files into Xcode. 
-
-It uses the same directory structure (`Assets.xcassets`) as in your Xcode application however uses the command line to convert this into the `Assets.car`, so you can simply replace the files in the directory and run the script to create your `Assets.car`. 
-
-- Download the following zip and extract it to a working directory somewhere on your machine.
-  - [assets-car-build.zip](resources/ios/assets-car-build.zip)
-  - You should find a script and a directory called `Assets.xcassets` which contains another directory called `AppIcon.appiconset`.
-
-- Replace all the images in the `AppIcon.appiconset` directory with your own icons. You must replace them with the correctly sized images. You can do this manually or we suggest you use an online tool: [appicon.build](https://www.appicon.build/). This tool will generate all the icons at the correct sizes from a single 1024x1024 image.
-
-- Run the `createAssetsCar` script. This will create a `build` directory and run the following command to build the `Assets.car` file:
-
-```
-xcrun actool Assets.xcassets --compile build --platform iphoneos --minimum-deployment-target 8.0 --app-icon AppIcon --output-partial-info-plist build/partial.plist
-```
 
 
 ## Packaging Assets.car
