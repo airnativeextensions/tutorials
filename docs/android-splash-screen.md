@@ -41,6 +41,7 @@ This will set a `splash_background` resource as the background. Lets create this
 This is where we will create the background for your application which will appear as the splasg screen.
 
 
+
 ### Centered Application Icon
 
 A simple splash screen is to use your application icon and center it in the view with a background colour. 
@@ -72,6 +73,27 @@ Change this background colour to suit your application.
 
 
 Once you've made these changes to the AIR SDK any Android application that is built with this AIR SDK will display your splash screen.
+
+
+
+### Image
+
+Alternatively if you want to use a custom image as the splash screen you can add an image file to the resources to use as the background. 
+
+For example lets add a `splash_image.png` to the drawable directory (alongside `splash_background.xml`), you then need to modify `splash_background.xml` to use this image as below:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap 
+            android:gravity="center"
+            android:src="@drawable/splash_image" />
+    </item>
+</layer-list>
+```
+
+
 
 
 ### Reverting
