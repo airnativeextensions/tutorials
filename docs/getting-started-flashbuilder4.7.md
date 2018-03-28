@@ -1,7 +1,7 @@
 
-# Getting Started 
+# Getting Started - Flash Builder 4.6/4.7
 
-## Flash Builder 4.6/4.7
+## Add the Extension
 
 An AIR Native Extension (ANE) is a single file with the extension `ane`. This file contains all of the native and actionscript libraries that are implemented by this extension. You don’t need access to a separate SWC file or to the source code to be able to use the ANE.
 

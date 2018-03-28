@@ -1,7 +1,5 @@
 
-# Getting Started 
-
-## Flash Builder 4.5 
+# Getting Started - Flash Builder 4.5 
 
 An AIR Native Extension (ANE) is a single file with the extension `ane`. This file contains all of the native and actionscript libraries that are implemented by this extension. You don’t need access to a separate SWC file or to the source code to be able to use the ANE.
 
@@ -62,7 +60,7 @@ All AIR applications have an application descriptor file. When an application us
 
 You will need to manually add the extension ID to the application descriptor at this stage. 
 
-To enable the extension in your application you need to add some additional information to your application descriptor. Basically this informs the compiler of what extensions are required in your application. Most of the IDEs will add this automatically but it is important to understand what is changing when you add an extension into your application.
+To enable the extension in your application you need to add some additional information to your application descriptor. Basically this informs the compiler of what extensions are required in your application. Some IDEs will add this automatically but it is important to understand what is changing when you add an extension into your application.
 
 More details on the extensions ID can be found [here](http://help.adobe.com/en_US/air/build/WS597e5dadb9cc1e0253f7d2fc1311b491071-8000.html#WS08cc5e527b0868243ea2ffcd1314dff873a-7ffe).
 
@@ -71,7 +69,7 @@ An extension may also require additional permissions or definitions in the appli
 
 
 
-### Packaging
+## Packaging
 
 
 Now you’ll need to open up a command line in the directory of your built application. The directory should contain:
