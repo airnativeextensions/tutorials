@@ -113,6 +113,70 @@ When using this method we advise that you add all the different dpi versions of 
 
 
 
+
+### Resources in ANEs 
+
+It is possible to to package your splash screen in a [Custom Resources ANE](https://github.com/distriqt/ANE-CustomResources). This has the advantage of being able to modify the SDK once and then use a custom ANE to specify the splash screen for each of your applications, rather than have to modify the AIR SDK before each build.
+
+This is done by setting up a default splash screen drawable resource in your AIR SDK and then *overriding* this resource with resources packaged in the ANE. Normally this would result in a resource conflict however we can use a small trick here. By providing a non resolution specific drawable resource in the AIR SDK and then overriding it with resolution specific versions.
+
+#### AIR SDK Modifications
+
+Lets start by again adjusting the AIR SDK by specifying a `splash_background` resource in the `styles.xml` resource located at `AIRSDK/lib/android/lib/resources/app_entry/res/values/styles.xml`:
+
+```xml
+<resources>
+    <style name="Theme.NoShadow" parent="android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>
+```
+
+Then lets create a fallback resource a simple 1x1 pixel black png called `splash_background.png` and place it in the AIR SDK at `AIRSDK/lib/android/lib/resources/app_entry/res/drawable/splash_background.png`. This is the resource that will be used if we don't package an ANE containing the override resource.
+
+You should find your AIR SDK packages normally and start with the expected black screen before loading your SWF.
+
+#### ANE Resource
+
+Next lets create the actual resource we will use for the splash in the ANE. You can use the same methods as above however instead of placing the drawable resource in `drawable` place a version in each of the resolution specific directories:
+
+- `drawable-hdpi`
+- `drawable-mdpi`
+- `drawable-xhdpi`
+- `drawable-xxhdpi`
+- `drawable-xxxhdpi`
+
+>
+> This is the important step! If you included the resource in the `drawable` directory your resource would conflict with the resource created in the AIR SDK and it will fail to package. However adding it to the resolution specific directories means it can override the AIR SDK resource without causing any issues.
+>
+> This small trick was pointed out by **mfrasier** on the Starling forum.
+>
+
+
+You can use a simple stretched image `drawable-hdpi/splash_background.png`, a 9-patch png `drawable-hdpi/splash_background.9.png`, or an xml resource `drawable-hdpi/splash_background.xml`. 
+
+We most commonly use the xml method, including another image that is centered in the layout as a drawable:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/splash_logo" />
+    </item>
+</layer-list>
+```
+
+
+
+
+
+
+
+
+
+
 ### Vector Drawables
 
 A VectorDrawable is a vector graphic defined in an XML file as a set of points, lines, and curves along with its associated color information. You can use vector drawables in your splash screen. It was introduced in Android 5.0 (API 21).
@@ -223,6 +287,8 @@ This was generated from the following vector drawable xml:
         android:pathData="M139.1,397.6l-20.5,-32.8l-32.4,22.5l20.4,32.6z" />
 </vector>
 ```
+
+
 
 
 
