@@ -15,12 +15,12 @@ You will need to open the Actionscript settings for your project. There are seve
 
 In your AIR project FLA file, open your applications publish settings, by going to File > Publish Settings.
 
-![](ane-tutorial-usingextensions-1.png)
+![](images/ane-tutorial-usingextensions-1.png)
 
 
 Select the wrench icon next to the Script dropdown. This will bring up the ActionScript Settings dialog.
 
-![](ane-tutorial-usingextensions-2.png)
+![](images/ane-tutorial-usingextensions-2.png)
 
 
 Select the Library path tab and click Browse to a Native Extension (ANE) file, as shown above, and select the ANE file. You should now be able to use the extensions functionality in your project and CS6 will include the ANE code when you publish your application.
