@@ -8,13 +8,28 @@ An AIR Native Extension (ANE) is a single file with the extension `ane`. This fi
 
 ## Adding the Extension
 
-TODO
+In Animate and Flash CC / CS6 Adobe have added the ability to simply add an ANE to your AIR project. 
+
+You will need to open the Actionscript settings for your project. There are several ways to access this panel either directly through the properties or through the menu as we show below.
+
+
+In your AIR project FLA file, open your applications publish settings, by going to File > Publish Settings.
+
+![](ane-tutorial-usingextensions-1.png)
+
+
+Select the wrench icon next to the Script dropdown. This will bring up the ActionScript Settings dialog.
+
+![](ane-tutorial-usingextensions-2.png)
+
+
+Select the Library path tab and click Browse to a Native Extension (ANE) file, as shown above, and select the ANE file. You should now be able to use the extensions functionality in your project and CS6 will include the ANE code when you publish your application.
+
+
+This process should add the extension id to your application descriptor however we find it's always good practice to double check with Animate.
+
 
 ## Adding the Extension ID
-
-IntelliJ requires that you manually add the extension id to your application descriptor.
-
-![](images/ane-tutorial-add-intellij-5.png)
 
 The extension id is a string that is used to identify the ANE and correctly package and create the extension. The extension id should be provided by the developer of the ANE.
 
