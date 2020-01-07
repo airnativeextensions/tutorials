@@ -58,6 +58,27 @@ To access the console open the **Console** application and select the device in 
 You can use the filter to search the logs for any relevant information. 
 
 
+#### libimobiledevice
+
+Using these tools you can do a range of iOS device related tasks, such as installing an application and accessing the device logs.
+
+Firstly install the tools using homebrew:
+
+```
+brew install --HEAD usbmuxd
+brew install --HEAD libimobiledevice  
+brew install --HEAD ideviceinstaller  
+```
+
+Then in a terminal type:
+
+```
+idevicesyslog
+```
+
+[Reference](http://www.libimobiledevice.org/)
+
+
 
 ### Windows
 
@@ -117,6 +138,11 @@ The logs are copied to your file system which you can locate using the following
 You should see a list of log files starting with the name of the application, locate your application name and open the log
 
 
+#### libimobiledevice
+
+These tools should work on Windows as well however we haven't tested this option:
+
+[Reference](http://www.libimobiledevice.org/)
 
 
 ## Disclaimer
