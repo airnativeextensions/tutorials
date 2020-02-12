@@ -1,4 +1,6 @@
 
+![](images/WindowsPackaging-promo.png)
+
 # Windows Store Packaging
 
 The Desktop App Converter can be used to turn your AIR application into an appx installer for the Windows Store. This is an important process to be able to convert your AIR app into a UWP application.
