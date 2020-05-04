@@ -37,7 +37,7 @@ There are two steps to adding adaptive icons to your application:
 There is no changes to the code of your application required, only the need to generate and package additional resources.
 
 
-**Note: Still package icons using the existing method in AIR (in the application descriptor) in order to correctly support older versions of Android that do not support adaptive icons (< v26)!**
+**Note: You should still package icons using the existing method in AIR (in the application descriptor) in order to correctly support older versions of Android that do not support adaptive icons (< v26)!**
 
 
 
