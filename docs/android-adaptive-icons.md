@@ -23,7 +23,7 @@ More information:
 
 ## Adobe AIR
 
-Currently AIR does not generate adaptive icons automatically. 
+Currently AIR does not generate adaptive icons automatically. You will most likely see your icon surrounded by a white area as in the icon on the left below. By adding adaptive icons we can make our AIR application a first class citzen with an icon that adapts with the OS. The icon on the right implements the adaptive icons approach contained here.
 
 ![](images/android-adaptive-icons.png)
 
