@@ -104,6 +104,22 @@ The following link contains an example of the resources we have used in some of 
 
 - [Example Resources](adaptive-icons-example-resources.zip)
 
+The important file to note is the `mipmap-anydpi-v26/icon.xml`. This is the file that defines the adaptive icon layers as you see below:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@mipmap/icon_background"/>
+    <foreground android:drawable="@mipmap/icon_foreground"/>
+</adaptive-icon>
+```
+
+The other files are just the different sized image resources for the different device screen densities.
+
+
+
+
+
 
 ## Packaging 
 
