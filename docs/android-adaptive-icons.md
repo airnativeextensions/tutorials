@@ -100,6 +100,10 @@ You should now have a list of resources in the *`res/mipmap-*`* folders:
 
 These folders are the resources that you will need to package in the next section.
 
+The following link contains an example of the resources we have used in some of our example applications.
+
+- [Example Resources](adaptive-icons-example-resources.zip)
+
 
 ## Packaging 
 
