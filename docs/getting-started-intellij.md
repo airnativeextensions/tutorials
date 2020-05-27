@@ -130,3 +130,41 @@ To avoid this we are in process of separating all our variant ANEs into differen
 
 This doesn't happen with other IDEs.
 
+
+
+
+
+
+
+
+
+## Changing JDK 
+
+If you have an older Android application you may have an 1024bit certificate that you are using to sign the application. In order to use these you must use a version of Java that supports them as they have been deprecated in current releases.
+
+If you don't use the older JDK then when entering the password for your certificate you may encounter an "invalid certificate" error.
+
+
+**To handle older 1024 bit certificates you will need to ensure IntelliJ is using JDK version 1.8.112 (or earlier).**
+
+
+Firstly download and install v1.8.0_112 of the JDK:
+
+- Download 112 JDK: https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
+- Install JDK
+
+
+v2018.2 + :
+- Use the "Choose Runtime" plugin
+- https://intellij-support.jetbrains.com/hc/en-us/articles/206544879-Selecting-the-JDK-version-the-IDE-will-run-under
+
+
+Earlier:
+- "Double shift" to bring up search menu and type: "Switch boot jdk"
+- Select the JDK v112 
+- Save and restart
+
+
+
+
+

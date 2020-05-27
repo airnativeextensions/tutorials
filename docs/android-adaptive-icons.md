@@ -102,7 +102,7 @@ These folders are the resources that you will need to package in the next sectio
 
 The following link contains an example of the resources we have used in some of our example applications.
 
-- [Example Resources](adaptive-icons-example-resources.zip)
+- [Example Resources](resources/android/adaptive-icons-example-resources.zip)
 
 The important file to note is the `mipmap-anydpi-v26/icon.xml`. This is the file that defines the adaptive icon layers as you see below:
 
