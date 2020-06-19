@@ -120,9 +120,14 @@ You do this by ensuring that it is in the root of your applications source and s
 
 To simplify migration to launch storyboards we have created a simple storyboard that pulls an image from your `Assets.car` and aspect fills it to the screen. You will add a single image to your `Assets.car` alongside your application icons. (If you followed the instructions above this will be the `LaunchImage.png` you added.)
 
-Download this file and extract the `LaunchScreen.storyboardc` file. Add it to your application and ensure it is packaged at the root level of your application alongside your `Assets.car`. 
+Download this zip file and extract the `LaunchScreen.storyboardc`. Add it to your application and ensure it is packaged at the root level of your application alongside your `Assets.car`. 
 
 - [LaunchScreen.storyboardc.zip](resources/ios/LaunchScreen.storyboardc.zip)
+
+>
+> `LaunchScreen.storyboardc` is a directory but will appear as a "file" (package) on macOS
+>
+
 
 Add the following to the `InfoAdditions` node in your application descriptor:
 

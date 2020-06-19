@@ -31,7 +31,7 @@ We have included these instructions as part of the [Icons, Launch Storyboards an
 Using Xcode
 
 >
-> Note: You will need a macOS machine with Xcode 9+ for this method to generate the Assets.car file
+> Note: You will need a macOS machine with Xcode 9+ for this method to generate the `Assets.car` file
 >
 
 As this process is tightly integrated with generating the `Assets.car` (asset catalog) containing your application icons, we will go through adding the icons first.
@@ -131,11 +131,13 @@ https://medium.com/flawless-app-stories/change-splash-screen-in-ios-app-for-dumm
 - Build the project ( Product -> Build).
 - Right-click on your ‘.app’ -> Show in finder.
 - Right click on your ‘.app’ -> Show package contents.
-- Locate the following files:
+- Locate the following:
   - `Assets.car`
   - `LaunchScreen.storyboardc`
 
-
+>
+> `LaunchScreen.storyboardc` is a directory but will appear as a "file" (package) on macOS
+>
 
 
 # Adding to AIR
