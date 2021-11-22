@@ -1,7 +1,14 @@
-built by [distriqt //](https://airnativeextensions.com) 
+built by [distriqt //](https://distriqt.com) 
 
 ![](images/hero.png)
 
+
+> **Deprecated**
+>
+> This site has been deprecated in favour of our main [documentation site](https://docs.airnativeextensions.com/docs/tutorials/)
+>
+> All the content here will now redirect through to the new site.
+>
 
 # Tutorials
 
@@ -9,9 +16,6 @@ This repository contains the source for a range of tutorials for using AIR Nativ
 
 
 [View the site](https://airnativeextensions.github.io/tutorials)
-
-
-
 
 
 ## Native Extensions
@@ -25,7 +29,7 @@ With over 40 extensions available, we are the largest provider of native extensi
 
 ## License
 
-[distriqt](http://distriqt.com) retains all copyright.
+[distriqt](https://distriqt.com) retains all copyright.
 
 
 

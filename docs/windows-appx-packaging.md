@@ -1,3 +1,6 @@
+>
+> This content is deprecated. See the latest version of this tutorial [here](https://docs.airnativeextensions.com/docs/tutorials/windows-appx-packaging)
+> 
 
 ![](images/WindowsPackaging-promo.png)
 

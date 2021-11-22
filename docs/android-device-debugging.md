@@ -1,3 +1,7 @@
+>
+> This content is deprecated. See the latest version of this tutorial [here](https://docs.airnativeextensions.com/docs/tutorials/android-device-debugging)
+> 
+
 # Device Debugging
 
 ## Android

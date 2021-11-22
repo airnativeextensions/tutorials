@@ -1,3 +1,6 @@
+>
+> This content is deprecated. See the latest version of this tutorial [here](https://docs.airnativeextensions.com/docs/tutorials/ios-sdk-versions)
+> 
 
 
 This document contains notes on integration with AIR of various versions of the iOS platform. 

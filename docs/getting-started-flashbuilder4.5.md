@@ -1,3 +1,6 @@
+>
+> This content is deprecated. See the latest version of this tutorial [here](https://docs.airnativeextensions.com/docs/tutorials/getting-started-flashbuilder4.5)
+> 
 
 # Getting Started - Flash Builder 4.5 
 

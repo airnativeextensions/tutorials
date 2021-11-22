@@ -1,3 +1,7 @@
+>
+> This content is deprecated. See the latest version of this tutorial [here](https://docs.airnativeextensions.com/docs/tutorials/android-splash-screen)
+> 
+
 # Android Splash Screen
 
 Android doesn't have a built in method of displaying an image at launch like iOS does however there are some techniques we can use to achieve a similar goal.

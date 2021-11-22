@@ -1,3 +1,8 @@
+>
+> This content is deprecated. See the latest version of this tutorial [here](https://docs.airnativeextensions.com/docs/tutorials/)
+> 
+
+
 
 ![](images/hero.png)
 

@@ -1,3 +1,7 @@
+>
+> This content is deprecated. See the latest version of this tutorial [here](https://docs.airnativeextensions.com/docs/tutorials/device-logs)
+> 
+
 # Access the Device Logs
 
 Getting access to the device logs often yields additional information when attempting to isolate an issue with an ANE. We may sometimes ask for you to provide these logs in order for us to debug an issue or isolate a problem.
